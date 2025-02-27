@@ -1,3 +1,4 @@
+import Header from "@/components/Header";
 import EducationItem from "../components/education_item";
 
 export type EducationData = {
@@ -19,17 +20,21 @@ export default function Home() {
 
   return (
     <>
-      <div className="flex flex-col items-center justify-center min-h-screen py-2">
+      <Header />
+      <div className="bg-gradient-to-br from-blue-900 to-blue-100">
+        <div className="flex flex-col items-center justify-center min-h-screen py-2">
 
-        <h1 className="text-4xl font-semibold">Daniel Evans</h1>
-        <p>Data engineer</p>
-      </div>
-      <div className="flex flex-col items-center">
-        {
-          education_data.map((data, index) => {
-            return <EducationItem key={index} {...data} />
-          })
-        }
+          <h1 className="text-4xl font-semibold">Daniel Evans</h1>
+          <p>Data engineer</p>
+        </div>
+        <div className="flex flex-col items-center">
+          {
+            education_data.map((data, index) => {
+              return <EducationItem key={index} {...data} />
+            })
+          }
+        </div>
+
       </div>
     </>
   );
