@@ -20,10 +20,9 @@ export default function Home() {
 
   return (
     <>
-      <Header />
-      <div className="bg-gradient-to-br from-blue-900 to-blue-100">
-        <div className="flex flex-col items-center justify-center min-h-screen py-2">
-
+      <div className="h-screen bg-gradient-to-br from-blue-900 to-blue-300 dark:bg-gradient-to-r dark:from-slate-900 dark:to-slate-800">
+        <Header />
+        <div className="flex flex-col items-center justify-center py-2">
           <h1 className="text-4xl font-semibold">Daniel Evans</h1>
           <p>Data engineer</p>
         </div>
