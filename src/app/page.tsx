@@ -23,7 +23,6 @@ export default function Home() {
 
         <h1 className="text-4xl font-semibold">Daniel Evans</h1>
         <p>Data engineer</p>
-        <p>eggs</p>
       </div>
       <div className="flex flex-col items-center">
         {
