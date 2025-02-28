@@ -1,7 +1,6 @@
 import Header from "@/components/Header";
 import EducationItem from "../components/education_item";
 import { promises as fs } from 'fs';
-import Image from "next/image";
 
 export type EducationData = {
   school: string;
