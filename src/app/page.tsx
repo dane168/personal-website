@@ -20,13 +20,13 @@ export default async function Home() {
               <div className="m-4 rounded-3xl overflow-hidden shadow-xl">
                 <Image src={"/1659083620630.jpeg"} width={120} height={120} alt="icon" className="shadow-2xl" />
               </div>
-              <h1 className="text-3xl font-bold md:text-4xl">Hi! I'm Daniel Evans</h1>
+              <h1 className="text-3xl font-bold md:text-4xl">Hi! I&apos;m Daniel Evans</h1>
               <p className="text-lg md:text-xl">Data engineer from the UK with multiple years experience as a full-stack developer</p>
             </div>
             {/*Medium size or upwards only*/}
             <div className="hidden p-12 pt-0 md:flex flex-row items-center text-left justify-between">
               <div>
-                <h1 className="text-3xl font-bold md:text-4xl">Hi! I'm Daniel Evans</h1>
+                <h1 className="text-3xl font-bold md:text-4xl">Hi! I&apos;m Daniel Evans</h1>
                 <p className="text-lg md:text-xl">Data engineer from the UK with multiple years experience as a full-stack developer</p>
 
               </div>
