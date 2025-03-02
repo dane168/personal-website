@@ -4,6 +4,7 @@ import "./globals.css";
 import { SpeedInsights } from "@vercel/speed-insights/next"
 import { ThemeProvider } from "@/components/theme-provider"
 
+
 const geistSans = Geist({
   variable: "--font-geist-sans",
   subsets: ["latin"],
@@ -30,6 +31,7 @@ export default function RootLayout({
       <body
         className={`${geistSans.variable} ${geistMono.variable} antialiased`}
       >
+        <script src="../path/to/flowbite/dist/flowbite.min.js"></script>
         <ThemeProvider
           attribute="class"
           defaultTheme="system"

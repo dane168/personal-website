@@ -1,0 +1,69 @@
+[
+  {
+    "company": "Bank of America",
+    "startdate": "Jul 2022",
+    "enddate": "Present",
+    "title": "Data Engineer",
+    "summary": "I began my career at Bank of America as a data engineer, starting on the graduate scheme. While largely focussed on creating and maintaining reports for enterprise wide server vulnerabilities, the scope of my work has also expanded to designing and implementing a number of automated processes. All my work is planned, developed, tested and deployed following DevOps practices which has given me excellent proficency in a wide range of tools and processes.",
+    "achievements": [
+      {
+        "summary": "Data pipelines using Python",
+        "description": "Created from the ground up, a collection of data pipelines to pull data from various sources then load and manipulate it ready for consumption in dashboards. This included logging and syncing tools to keep track of progress and ensure that the data was duplicated across databases as required.",
+        "skills": [
+          "Python",
+          "SQL",
+          "Pandas",
+          "Data ETL"
+        ]
+      },
+      {
+        "summary": "Visualisations with Tableau ",
+        "description": "Created and maintain a large number of dashboards using Tableau, reporting on enterprise wide server vulnerabilities. I have learnt the ins and outs of how Tableau works and how it can be used to effectively convey a story through the visualisation of data.",
+        "skills": [
+          "Tableau",
+          "Data Viz"
+        ]
+      },
+      {
+        "summary": "Team website",
+        "description": "And this is how i did that",
+        "skills": [
+          "Python",
+          "Django",
+          "HTML",
+          "JavaScript",
+          "TailwindCSS",
+          "Linux",
+          "Web dev"
+        ]
+      }
+    ],
+    "skills": [
+      "Python",
+      "SQL",
+      "Pandas",
+      "Data ETL",
+      "Django",
+      "Web dev",
+      "Linux"
+    ]
+  },
+  {
+    "company": "Tesco",
+    "startdate": "Apr 2020",
+    "enddate": "June 2022",
+    "title": "Customer Assitant & Shift Leader",
+    "summary": "Part-time role during my time at university. ",
+    "achievements": [
+      {
+        "Summary": "",
+        "description": "",
+        "skills": []
+      }
+    ],
+    "skills": [
+      "Customer service",
+      "Leadership"
+    ]
+  }
+]
