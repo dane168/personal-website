@@ -5,8 +5,6 @@ import Image from "next/image";
 import Link from "next/link";
 
 
-
-
 export default async function Home() {
 
   return (
@@ -14,13 +12,13 @@ export default async function Home() {
       <div className="min-h-screen flex flex-col">
         <div className="bg-gradient-to-br from-cyan-600 to-cyan-500 bg-opacity-50">
           <div className=" max-w-[1200px] mx-auto">
-            <div className='p-2 flex justify-end'>
+            <div className="p-2 flex justify-end">
               <ModeToggle />
             </div>
             {/*Mobile only*/}
             <div className="md:hidden p-12 pt-0 flex flex-col items-center text-center">
               <div className="m-4 rounded-3xl overflow-hidden shadow-xl">
-                <Image src={"/1659083620630.jpeg"} width={120} height={120} alt='icon' className="shadow-2xl" />
+                <Image src={"/1659083620630.jpeg"} width={120} height={120} alt="icon" className="shadow-2xl" />
               </div>
               <h1 className="text-3xl font-bold md:text-4xl">Hi! I'm Daniel Evans</h1>
               <p className="text-lg md:text-xl">Data engineer from the UK with multiple years experience as a full-stack developer</p>
@@ -33,7 +31,7 @@ export default async function Home() {
 
               </div>
               <div className="m-4 rounded-full overflow-hidden shadow-xl">
-                <Image src={"/1659083620630.jpeg"} width={200} height={200} alt='icon' className="shadow-2xl" />
+                <Image src={"/1659083620630.jpeg"} width={200} height={200} alt="icon" className="shadow-2xl" />
               </div>
             </div>
 
