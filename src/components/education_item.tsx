@@ -1,5 +1,5 @@
-import { EducationData } from '@/app/page'
 import React from 'react'
+import { EducationData } from '../../data/types'
 
 const EducationItem = (data: EducationData) => {
   return (

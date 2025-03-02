@@ -23,7 +23,7 @@ const WorkSection = ({ work_data }: { work_data: WorkData[] }) => {
                   {
                     data.achievements.map((achieve, indx) => {
                       return (
-                        <li className='mx-6 my-4'>
+                        <li key={indx} className='mx-6 my-4'>
                           <p className='text-lg font-semibold'>{achieve.summary}</p>
                           <div className="my-2 flex flex-row justify-start flex-wrap">
                             {
