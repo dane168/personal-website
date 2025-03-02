@@ -20,14 +20,14 @@ export default async function Home() {
               <div className="m-4 rounded-3xl overflow-hidden shadow-xl">
                 <Image src={"/1659083620630.jpeg"} width={120} height={120} alt="icon" className="shadow-2xl" />
               </div>
-              <h1 className="text-3xl font-bold md:text-4xl">Hi! I&apos;m Daniel Evans</h1>
-              <p className="text-lg md:text-xl">Data engineer from the UK with multiple years experience as a full-stack developer</p>
+              <h1 className="mb-2 text-3xl font-bold md:text-4xl">Hi! I&apos;m Daniel Evans</h1>
+              <p className="text-lg md:text-xl">Data engineer from the UK with multiple years experience leading the development of a full-stack application</p>
             </div>
             {/*Medium size or upwards only*/}
             <div className="hidden p-12 pt-0 md:flex flex-row items-center text-left justify-between">
               <div>
-                <h1 className="text-3xl font-bold md:text-4xl">Hi! I&apos;m Daniel Evans</h1>
-                <p className="text-lg md:text-xl">Data engineer from the UK with multiple years experience as a full-stack developer</p>
+                <h1 className="mb-2 text-3xl font-bold md:text-4xl">Hi! I&apos;m Daniel Evans</h1>
+                <p className="text-lg md:text-xl">Data engineer from the UK with multiple years experience leading the development of a full-stack application</p>
 
               </div>
               <div className="m-4 rounded-full overflow-hidden shadow-xl">
@@ -39,18 +39,18 @@ export default async function Home() {
         </div>
 
         <div className="h-16 relative -top-8 rounded-full shadow-2xl overflow-hidden max-w-[1200px] mx-2 md:mx-auto">
-          <nav className="h-full flex flex-row justify-evenly items-center bg-white dark:bg-slate-800">
+          <nav className="h-full overflow-x-scroll flex flex-row justify-evenly items-center bg-white dark:bg-slate-800">
             <div className="p-3 mx-1 md:mx-8 font-bold md:text-xl">
-              <Link href="#about-me">About Me</Link>
+              <Link href="#about-me" className="whitespace-nowrap">About Me</Link>
             </div>
             <div className="p-3 mx-1 md:mx-8 font-bold md:text-xl">
-              <Link href="#my-tech-stack">My Tech Stack</Link>
+              <Link href="#my-tech-stack" className="whitespace-nowrap">My Tech Stack</Link>
             </div>
             <div className="p-3 mx-1 md:mx-8 font-bold md:text-xl">
-              <Link href={"/resume"}>Resume</Link>
+              <Link href={"/resume"} className="whitespace-nowrap">Resume</Link>
             </div>
             <div className="p-3 mx-1 md:mx-8 font-bold md:text-xl">
-              <Link href="#links">Links</Link>
+              <Link href="#links" className="whitespace-nowrap">Links</Link>
             </div>
           </nav>
         </div>
