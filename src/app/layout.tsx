@@ -31,7 +31,6 @@ export default function RootLayout({
       <body
         className={`${geistSans.variable} ${geistMono.variable} antialiased`}
       >
-        <script src="../path/to/flowbite/dist/flowbite.min.js"></script>
         <ThemeProvider
           attribute="class"
           defaultTheme="system"
