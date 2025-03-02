@@ -1,6 +1,5 @@
 import { ModeToggle } from "@/components/dark-toggle";
 import Footer from "@/components/Footer";
-import Header from "@/components/Header";
 import TechStackItem from "@/components/TechStackItem";
 import Image from "next/image";
 import Link from "next/link";

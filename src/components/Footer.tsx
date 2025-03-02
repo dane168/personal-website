@@ -1,7 +1,5 @@
-import Image from 'next/image'
 import Link from 'next/link'
 import React from 'react'
-import { ModeToggle } from './dark-toggle'
 import { FaGithub, FaLinkedin } from 'react-icons/fa'
 
 const Footer = () => {
