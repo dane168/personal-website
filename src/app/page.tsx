@@ -9,8 +9,8 @@ export default async function Home() {
 
   return (
     <>
-      <div className="min-h-screen flex flex-col">
-        <div className="bg-gradient-to-br from-cyan-600 to-cyan-500 bg-opacity-50">
+      <div className="min-h-screen flex flex-col bg-white dark:bg-slate-900">
+        <div className="bg-gradient-to-br from-cyan-600 to-cyan-500 dark:from-black dark:to-slate-900">
           <div className=" max-w-[1200px] mx-auto">
             <div className="p-2 flex justify-end">
               <ModeToggle />
@@ -39,7 +39,7 @@ export default async function Home() {
         </div>
 
         <div className="h-16 relative -top-8 rounded-full shadow-2xl overflow-hidden max-w-[1200px] mx-2 md:mx-auto">
-          <nav className="h-full bg-white flex flex-row justify-evenly items-center">
+          <nav className="h-full flex flex-row justify-evenly items-center bg-white dark:bg-slate-800">
             <div className="p-3 mx-1 md:mx-8 font-bold md:text-xl">
               <Link href="#about-me">About Me</Link>
             </div>
@@ -55,58 +55,61 @@ export default async function Home() {
           </nav>
         </div>
         <div className="grow">
-          <div id="about-me" className="mx-4 mb-20 bg-white text-left max-w-[1000px] md:mx-auto">
+          <div id="about-me" className="mx-4 mb-20  text-left max-w-[1000px] md:mx-auto">
             <h1 className="mb-4 text-3xl font-bold">About Me</h1>
             <p className="mb-4">
-              Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget dolor. Aenean massa. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus.
+              My passion for technology began early, sparked by my curiosity about computers. From the moment I started exploring the inner workings of my parents old PC tower and troubleshooting software issues, I developed a deep interest in research and technology that has remained my primary passion to this day.
             </p>
             <p className="mb-4">
-              Donec quam felis, ultricies nec, pellentesque eu, pretium quis, sem. Nulla consequat massa quis enim. Donec pede justo, fringilla vel, aliquet nec, vulputate eget, arcu.
+              Pursuing a degree in Physics with Space Science provided me with invaluable opportunities to refine my research skills in a professional, real-world setting. Despite this focus, my enthusiasm for computers and software never wavered. Fortunately, many of my assignments also offered the opportunity to enhance my programming skills, particularly through scientific modeling projects in Python and C and trying to utilise basic machine learning algorithms.
             </p>
             <p className="mb-4">
-              In enim justo, rhoncus ut, imperdiet a, venenatis vitae, justo. Nullam dictum felis eu pede mollis pretium. Integer tincidunt. Cras dapibus. Vivamus elementum semper nisi. Aenean vulputate eleifend tellus. Aenean leo ligula, porttitor eu, consequat vitae, eleifend ac, enim. Aliquam lorem ante, dapibus in, viverra quis, feugiat a,
+              After graduating, I was fortunate to secure a position as a Data Engineer at Bank of America within the Technology division. This role has afforded me a comprehensive understanding of how large organizations function and how software development teams collaborate in a professional environment. Although my official title is Data Engineer, a significant portion of my work has involved full-stack development, where I contributed to building a website from the ground up. This experience has enabled me to gain proficiency in a wide array of technologies, from building backends in Python and SQL to polisihing the front-end with TypeScript and React.
+            </p>
+            <p className="mb-4">
+              With a strong foundation in software development, data engineering, and problem-solving, I excel in Python, C, SQL, and full-stack development. My experience at Bank of America has sharpened my technical and professional skills, making me a versatile and adaptable team player. Passionate about technology, I&apos;m eager to contribute and grow.
             </p>
           </div>
 
-          <div id="my-tech-stack" className="mb-24 bg-white text-center">
+          <div id="my-tech-stack" className="mb-24 text-center bg-white dark:bg-slate-900">
             <h1 className="text-3xl font-bold">My Tech Stack</h1>
             <div className="flex flex-col items-center">
               {/* Languages */}
               <div className="my-4">
                 <h2 className="text-xl md:text-2xl font-bold">Languages</h2>
                 <div className="flex flex-row flex-wrap">
-                  <TechStackItem src={"/logo-python.png"} name={"Python"} />
-                  <TechStackItem src={"/logo-sql.png"} name={"SQL"} />
-                  <TechStackItem src={"/logo-typescript.png"} name={"TypeScript"} />
-                  <TechStackItem src={"/logo-js.png"} name={"JavaScript"} />
+                  <TechStackItem src={"/logo-python.png"} name={"Python"} url={"https://www.python.org/"} />
+                  <TechStackItem src={"/logo-sql.png"} name={"SQL"} url={"https://www.postgresql.org/"} />
+                  <TechStackItem src={"/logo-typescript.png"} name={"TypeScript"} url={"https://www.typescriptlang.org/"} />
+                  <TechStackItem src={"/logo-js.png"} name={"JavaScript"} url={"https://developer.mozilla.org/en-US/docs/Web/JavaScript"} />
                 </div>
               </div>
               {/* Front-end */}
               <div className="my-4">
                 <h2 className="text-xl md:text-2xl font-bold">Frontend</h2>
                 <div className="flex flex-row flex-wrap">
-                  <TechStackItem src={"/logo-react.png"} name={"React"} />
-                  <TechStackItem src={"/logo-html.png"} name={"HTML"} />
-                  <TechStackItem src={"/logo-css.png"} name={"CSS"} />
-                  <TechStackItem src={"/logo-tailwind.png"} name={"TailwindCSS"} />
+                  <TechStackItem src={"/logo-react.png"} name={"React"} url={"https://react.dev/"} />
+                  <TechStackItem src={"/logo-html.png"} name={"HTML"} url={"https://developer.mozilla.org/en-US/docs/Web/HTML"} />
+                  <TechStackItem src={"/logo-css.png"} name={"CSS"} url={"https://developer.mozilla.org/en-US/docs/Web/CSS"} />
+                  <TechStackItem src={"/logo-tailwind.png"} name={"TailwindCSS"} url={"https://tailwindcss.com/"} />
                 </div>
               </div>
               {/* Back-end */}
               <div className="my-4">
                 <h2 className="text-xl md:text-2xl font-bold">Backend </h2>
                 <div className="flex flex-row flex-wrap">
-                  <TechStackItem src={"/logo-django.png"} name={"Django"} />
-                  <TechStackItem src={"/logo-pandas.png"} name={"Pandas"} />
-                  <TechStackItem src={"/logo-fastapi.png"} name={"FastAPI"} />
+                  <TechStackItem src={"/logo-django.png"} name={"Django"} url={"https://www.djangoproject.com/"} />
+                  <TechStackItem src={"/logo-pandas.png"} name={"Pandas"} url={"https://pandas.pydata.org/"} />
+                  <TechStackItem src={"/logo-fastapi.png"} name={"FastAPI"} url={"https://fastapi.tiangolo.com/"} />
                 </div>
               </div>
               {/* Dev tools */}
               <div className="my-4">
                 <h2 className="text-xl md:text-2xl font-bold">Development tools</h2>
                 <div className="flex flex-row flex-wrap">
-                  <TechStackItem src={"/logo-linux.png"} name={"Linux"} />
-                  <TechStackItem src={"/logo-git.png"} name={"git"} />
-                  <TechStackItem src={"/logo-jira.png"} name={"Jira"} />
+                  <TechStackItem src={"/logo-linux.png"} name={"Linux"} url={"https://www.linux.org/"} />
+                  <TechStackItem src={"/logo-git.png"} name={"git"} url={"https://git-scm.com/"} />
+                  <TechStackItem src={"/logo-jira.png"} name={"Jira"} url={"https://www.atlassian.com/software/jira"} />
                 </div>
               </div>
             </div>
@@ -117,7 +120,7 @@ export default async function Home() {
         <div id="links">
           <Footer />
         </div>
-      </div>
+      </div >
     </>
   );
 }

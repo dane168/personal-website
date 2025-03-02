@@ -1,9 +1,6 @@
 import Header from "@/components/Header";
 import EducationItem from "../../components/education_item";
 import { promises as fs } from 'fs';
-import { FaHtml5, FaPython } from "react-icons/fa";
-import { DiMsqlServer } from "react-icons/di";
-import { SiTypescript } from "react-icons/si";
 import WorkSection from "@/components/work";
 import { EducationData, WorkData } from "../../../data/types";
 
@@ -27,9 +24,6 @@ export default async function Home() {
               <h1 className="text-5xl font-semibold">Daniel Evans</h1>
               <p className="text-lg my-2">Data engineer | danieljevans168@gmail.com</p>
             </div>
-            <div>
-              <p className="">Hello! My name is Daniel and this is my personal website. I am a data engineer currently based in the UK with 3 years experience working with an agile development process.</p>
-            </div>
 
             {/* Work section */}
             <WorkSection work_data={work_data} />
@@ -42,17 +36,6 @@ export default async function Home() {
                   return <EducationItem key={index} {...data} />
                 })
               }
-            </div>
-
-            {/* Technologies section */}
-            <div className="flex flex-col my-4">
-              <h1 className="text-xl font-semibold">My Tech Stack</h1>
-              <div className="my-8 flex flex-row justify-evenly">
-                <FaPython size={25} />
-                <DiMsqlServer size={25} />
-                <SiTypescript size={25} />
-                <FaHtml5 size={20} />
-              </div>
             </div>
 
           </div>

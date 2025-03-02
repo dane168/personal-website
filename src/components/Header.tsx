@@ -10,7 +10,9 @@ const Header = () => {
       <nav className='py-4 flex flex-row justify-between items-center '>
         <div>
           <div className='mx-2 rounded-3xl overflow-hidden'>
-            <Image src={"/1659083620630.jpeg"} width={70} height={70} alt='icon' />
+            <Link href={"/"}>
+              <Image src={"/1659083620630.jpeg"} width={70} height={70} alt='icon' />
+            </Link>
           </div>
         </div>
         <div className='flex flex-row'>

@@ -3,8 +3,9 @@ import React from 'react'
 import { FaGithub, FaLinkedin } from 'react-icons/fa'
 
 const Footer = () => {
+  const year = new Date().getFullYear()
   return (
-    <div className='p-4 mx-auto text-center bg-slate-400'>
+    <div className='p-4 mx-auto text-center bg-cyan-600 dark:bg-slate-800'>
       <h2 className='text-lg font-semibold'>My links</h2>
       <div className='my-4 flex flex-row justify-center'>
         <div className='mx-2'>
@@ -17,6 +18,12 @@ const Footer = () => {
             <FaGithub size={30} />
           </Link>
         </div>
+      </div>
+      <div className='my-4'>
+        Contact: <a href="mailto:danieljevans168@gmail.com">danieljevans168@gmail.com</a>
+      </div>
+      <div className='my-4'>
+        Copyright © {year} Daniel Evans
       </div>
     </div>
   )
