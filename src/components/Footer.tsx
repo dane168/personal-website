@@ -5,7 +5,7 @@ import { FaGithub, FaLinkedin } from 'react-icons/fa'
 const Footer = () => {
   const year = new Date().getFullYear()
   return (
-    <div className='p-4 mx-auto text-center bg-cyan-600 dark:bg-slate-800'>
+    <div className='p-4 mx-auto w-full text-center bg-gradient-to-r from-cyan-600 to-cyan-500 dark:from-black dark:to-slate-900'>
       <h2 className='text-lg font-semibold'>My links</h2>
       <div className='my-4 flex flex-row justify-center'>
         <div className='mx-2'>

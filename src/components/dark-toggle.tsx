@@ -9,10 +9,10 @@ export function ModeToggle() {
 
   return (
     <div className="h-4 hover:cursor-pointer" onClick={() => setTheme(theme === 'light' ? 'dark' : 'light')}>
-      <div className="m-2 dark:hidden">
+      <div className="dark:hidden">
         <IoSunnyOutline size={25} />
       </div>
-      <div className="m-2 hidden dark:block">
+      <div className="hidden dark:block">
         <IoMoonOutline size={25} />
       </div>
     </div>

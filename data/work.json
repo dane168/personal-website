@@ -26,7 +26,7 @@
       },
       {
         "summary": "Team website",
-        "description": "And this is how i did that",
+        "description": "Lead developer on full-stack web framework used for automation tools. Build in Django, utilising its built-in backend features and a custom front-end using JavaScript and TailwindCSS. Along with developing the application, I also planned and executed the deployment within the Bank's network giving me a great place exercise the use of Linux as well as setting up SSL and Apache in the real world.",
         "skills": [
           "Python",
           "Django",
@@ -34,26 +34,18 @@
           "JavaScript",
           "TailwindCSS",
           "Linux",
-          "Web dev"
+          "Full-stack"
         ]
       }
     ],
-    "skills": [
-      "Python",
-      "SQL",
-      "Pandas",
-      "Data ETL",
-      "Django",
-      "Web dev",
-      "Linux"
-    ]
+    "skills": []
   },
   {
     "company": "Tesco",
     "startdate": "Apr 2020",
     "enddate": "June 2022",
     "title": "Customer Assitant & Shift Leader",
-    "summary": "Part-time role during my time at university. ",
+    "summary": "Part-time role during my time at university. I was allowed to train to be a shift leader for when schedules required which gave me the opportunity to practice leadership and demonstates how I always want to keep learning no matter the position I am in.",
     "achievements": [
       {
         "Summary": "",

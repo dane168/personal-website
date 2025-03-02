@@ -16,6 +16,15 @@ const WorkSection = ({ work_data }: { work_data: WorkData[] }) => {
                 <p className='my-1'>
                   {data.startdate} - {data.enddate}<span className="mx-4">|</span>{data.title}
                 </p>
+                <div className="my-2 flex flex-row justify-start flex-wrap">
+                  {
+                    data.skills.map((skill, indx) => {
+                      return (
+                        <SkillTag key={indx} skill={skill} />
+                      )
+                    })
+                  }
+                </div>
                 <p className='my-2'>
                   {data.summary}
                 </p>

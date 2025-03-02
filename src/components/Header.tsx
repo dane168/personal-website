@@ -18,12 +18,12 @@ const Header = () => {
         <div className='flex flex-row'>
           <div className='mx-2 text-black dark:text-white flex flex-col justify-center items-center'>
             <Link href={"https://www.linkedin.com/in/daniel-evans-3b4977176"} >
-              <FaLinkedin size={30} />
+              <FaLinkedin size={25} />
             </Link>
           </div>
           <div className='mx-2 text-black dark:text-white flex flex-col justify-center items-center'>
             <Link href={"https://github.com/dane168/personal-website"} >
-              <FaGithub size={30} />
+              <FaGithub size={25} />
             </Link>
           </div>
           <div className='mx-2'>
