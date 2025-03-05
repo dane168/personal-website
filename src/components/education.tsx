@@ -1,5 +1,6 @@
 import React from 'react'
 import { EducationData } from '../../data/types'
+import SkillTag from './skill_tag'
 
 const EducationSection = ({ education_data }: { education_data: EducationData[] }) => {
   return (
@@ -18,8 +19,30 @@ const EducationSection = ({ education_data }: { education_data: EducationData[] 
                 <div className="my-2 flex flex-row justify-start flex-wrap">
                 </div>
                 <p className='my-2'>
-                  {data.school}
+                  {data.summary}
                 </p>
+
+                <ul className='my-2'>
+                  {
+                    data.projects.map((project, indx) => {
+                      return (
+                        <li key={indx} className='mx-6 my-4'>
+                          <p className='text-lg font-semibold'>{project.title}</p>
+                          <div className="my-2 flex flex-row justify-start flex-wrap">
+                            {
+                              project.skills.map((skill, indx) => {
+                                return (
+                                  <SkillTag key={indx} skill={skill} />
+                                )
+                              })
+                            }
+                          </div>
+                          <p>{project.description}</p>
+                        </li>
+                      )
+                    })
+                  }
+                </ul>
 
               </div>
 

@@ -4,6 +4,14 @@ export type EducationData = {
   start_date: string;
   end_date: string;
   location: string;
+  summary: string;
+  projects: {
+    title: string;
+    description: string;
+    skills: [
+      string
+    ]
+  }[]
 }
 
 export type WorkData = {

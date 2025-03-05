@@ -4,6 +4,38 @@
     "degree": "MPhys in Physics with Space Science",
     "start_date": "Sep 2018",
     "end_date": "Jul 2022",
-    "location": "Leicester, UK"
+    "location": "Leicester, UK",
+    "summary": "1st class Master of Physics degree. Key modules and topics covered: Statistical Physics, Statistical Data Inference, Computational Physics, Core Physics, Experimental Physics. My option courses had a large focus on computational Physics, in particular looking at how we can use machine learning algorithms within Physics.",
+    "projects": [
+      {
+        "title": "Data inference using Gaussian Processes",
+        "description": "Modelling time-series data with a form of machine learning. Developed with a mix of Python and R for computation and then visualisation. The end goal was to try and make predictive scientific models for star classification utilising Gaussian processes and Fourier Transforms.",
+        "skills": [
+          "R",
+          "Python",
+          "Modelling",
+          "Machine Learning"
+        ]
+      },
+      {
+        "title": "Dynamics of Circumbinary planets",
+        "description": "Modelling the orbits of three gravitationally bound bodies using batch processing on a super-computer to find stable orbits. Developed entirely in C using batch processing on the super-computer to find optimal model parameters resulting in stable orbits.",
+        "skills": [
+          "C",
+          "Batch processing",
+          "Linux",
+          "Modelling"
+        ]
+      }
+    ]
+  },
+  {
+    "school": "King Edward VI Sixth Form College",
+    "degree": "3 A-Level qualifications",
+    "start_date": "Sep 2016",
+    "end_date": "Aug 2018",
+    "location": "Nuneaton, UK",
+    "summary": "Recieved the following grades in A-Levels: Mathematics (A*), Physics (A), and Computer Science (A)",
+    "projects": []
   }
 ]

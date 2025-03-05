@@ -4,11 +4,11 @@
     "startdate": "Jul 2022",
     "enddate": "Present",
     "title": "Data Engineer",
-    "summary": "I began my career at Bank of America as a data engineer, starting on the graduate scheme. While largely focussed on creating and maintaining reports for enterprise wide server vulnerabilities, the scope of my work has also expanded to designing and implementing a number of automated processes. All my work is planned, developed, tested and deployed following DevOps practices which has given me excellent proficency in a wide range of tools and processes.",
+    "summary": "I began my career at Bank of America as a data engineer, starting on the graduate scheme. While largely focussed on creating and maintaining reports for enterprise-wide server vulnerability tracking, the scope of my work has also expanded to designing and implementing a number of automated processes. All of my work is planned, developed, tested and deployed following DevOps practices which has given me excellent proficiency in a wide range of tools and processes.",
     "achievements": [
       {
         "summary": "Data pipelines using Python",
-        "description": "Created from the ground up, a collection of data pipelines to pull data from various sources then load and manipulate it ready for consumption in dashboards. This included logging and syncing tools to keep track of progress and ensure that the data was duplicated across databases as required.",
+        "description": "Created from the ground up, a collection of data pipelines to pull data from various sources then load and manipulate it ready for consumption in dashboards. This included custom logging and syncing tools linked to our front-end to keep track of the data loading process and to ensure that the data is correctly synchronised across our databases.",
         "skills": [
           "Python",
           "SQL",
@@ -17,16 +17,25 @@
         ]
       },
       {
+        "summary": "Database maintenance",
+        "description": "Took ownership of various SQL views and stored procedures in our database used to manipulate data before being used in the dashboards. Additionally, drove the migration of data from one database to another as part of upgrading the server infrastructure which required a lot of planning to avoid any downtime to our dashboards.",
+        "skills": [
+          "SQL",
+          "MS SQL Server",
+          "PostgreSQL"
+        ]
+      },
+      {
         "summary": "Visualisations with Tableau ",
-        "description": "Created and maintain a large number of dashboards using Tableau, reporting on enterprise wide server vulnerabilities. I have learnt the ins and outs of how Tableau works and how it can be used to effectively convey a story through the visualisation of data.",
+        "description": "Created and maintained a large number of dashboards using Tableau, reporting on enterprise-wide server vulnerabilities. I have learnt the ins and outs of Tableau and have good experience with making impactful dashboards which convey the data as a story.",
         "skills": [
           "Tableau",
-          "Data Viz"
+          "Data Visualisation"
         ]
       },
       {
         "summary": "Team website",
-        "description": "Lead developer on full-stack web framework used for automation tools. Build in Django, utilising its built-in backend features and a custom front-end using JavaScript and TailwindCSS. Along with developing the application, I also planned and executed the deployment within the Bank's network giving me a great place exercise the use of Linux as well as setting up SSL and Apache in the real world.",
+        "description": "I am the lead developer of our team's automation website which is used to automate a number of previously manual processes. This is built in Django, a Python full stack web framework, utilising its backend and frontend features as well as using custom JavaScript and styling to improve reactivity and design. As well as the development side, I have also gained valuable experience with deploying software in a professional environment including a thorough understanding of Linux operating systems. As a lead developer, I also used this project to learn the best practices when it comes to planning and assigning tasks within a team in a professional software development setting.",
         "skills": [
           "Python",
           "Django",
@@ -45,7 +54,7 @@
     "startdate": "Apr 2020",
     "enddate": "June 2022",
     "title": "Customer Assitant & Shift Leader",
-    "summary": "Part-time role during my time at university. I was allowed to train to be a shift leader for when schedules required which gave me the opportunity to practice leadership and demonstates how I always want to keep learning no matter the position I am in.",
+    "summary": "Part-time role during my time at university. I was allowed to train up to be a shift leader for when the schedules required it which gave me the opportunity to practice leadership and demonstrates how I always want to keep learning no matter the position I am in.",
     "achievements": [
       {
         "Summary": "",
