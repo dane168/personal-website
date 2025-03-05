@@ -8,7 +8,7 @@ export function ModeToggle() {
   const { theme, setTheme } = useTheme()
 
   return (
-    <div className="h-4 hover:cursor-pointer" onClick={() => setTheme(theme === 'light' ? 'dark' : 'light')}>
+    <div className="h-4 hover:cursor-pointer" onClick={() => setTheme(theme === 'light' ? 'dark' : 'light')} title="Toggle light/dark mode" >
       <div className="dark:hidden">
         <IoSunnyOutline size={25} />
       </div>

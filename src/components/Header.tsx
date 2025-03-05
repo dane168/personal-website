@@ -3,6 +3,7 @@ import Link from 'next/link'
 import React from 'react'
 import { ModeToggle } from './dark-toggle'
 import { FaGithub, FaLinkedin } from 'react-icons/fa'
+import { RiFileDownloadLine } from 'react-icons/ri'
 
 const Header = () => {
   return (
@@ -17,12 +18,17 @@ const Header = () => {
         </div>
         <div className='flex flex-row'>
           <div className='mx-2 text-black dark:text-white flex flex-col justify-center items-center'>
-            <Link href={"https://www.linkedin.com/in/daniel-evans-3b4977176"} >
+            <a href="/cv_2025.pdf" download="cv_2025" title='Download CV'>
+              <RiFileDownloadLine size={25} />
+            </a>
+          </div>
+          <div className='mx-2 text-black dark:text-white flex flex-col justify-center items-center'>
+            <Link href={"https://www.linkedin.com/in/daniel-evans-3b4977176"} title='LinkedIn'>
               <FaLinkedin size={25} />
             </Link>
           </div>
           <div className='mx-2 text-black dark:text-white flex flex-col justify-center items-center'>
-            <Link href={"https://github.com/dane168/personal-website"} >
+            <Link href={"https://github.com/dane168/personal-website"} title='GitHub' >
               <FaGithub size={25} />
             </Link>
           </div>
