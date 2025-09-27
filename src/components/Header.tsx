@@ -8,7 +8,7 @@ import { RiFileDownloadLine } from 'react-icons/ri'
 const Header = () => {
   return (
     <div className=''>
-      <nav className='py-4 flex flex-row justify-between items-center '>
+      <nav className='py-4 px-2 flex flex-row justify-between items-center border-b border-gray-200/30 dark:border-slate-600/30'>
         <div>
           <div className='mx-2 rounded-3xl overflow-hidden'>
             <Link href={"/"}>
@@ -18,7 +18,7 @@ const Header = () => {
         </div>
         <div className='flex flex-row'>
           <div className='mx-2 text-black dark:text-white flex flex-col justify-center items-center'>
-            <a href="/cv_2025.pdf" download="cv_2025" title='Download CV'>
+            <a href="/CV_2025.pdf" download="CV_2025" title='Download CV'>
               <RiFileDownloadLine size={25} />
             </a>
           </div>

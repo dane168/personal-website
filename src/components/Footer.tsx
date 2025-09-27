@@ -5,27 +5,22 @@ import { FaGithub, FaLinkedin } from 'react-icons/fa'
 const Footer = () => {
   const year = new Date().getFullYear()
   return (
-    <div className='p-4 mx-auto w-full text-center bg-gradient-to-r from-cyan-600 to-cyan-500 dark:from-black dark:to-slate-900'>
-      <h2 className='text-lg font-semibold'>My links</h2>
-      <div className='my-4 flex flex-row justify-center'>
-        <div className='mx-2'>
-          <Link href={"https://www.linkedin.com/in/daniel-evans-3b4977176"} >
-            <FaLinkedin size={30} />
-          </Link>
-        </div>
-        <div className='mx-2'>
-          <Link href={"https://github.com/dane168/personal-website"} >
-            <FaGithub size={30} />
-          </Link>
-        </div>
+    <footer className="w-full px-4 py-4 bg-white dark:bg-slate-900 border-t border-gray-200 dark:border-slate-700 text-center text-sm flex flex-col items-center gap-2">
+      <div className="flex flex-row justify-center gap-4 mb-1">
+        <Link href={"https://www.linkedin.com/in/daniel-evans-3b4977176"} title="LinkedIn" className="hover:text-indigo-600 dark:hover:text-indigo-400 transition-colors">
+          <FaLinkedin size={22} />
+        </Link>
+        <Link href={"https://github.com/dane168/personal-website"} title="GitHub" className="hover:text-indigo-600 dark:hover:text-indigo-400 transition-colors">
+          <FaGithub size={22} />
+        </Link>
       </div>
-      <div className='my-4'>
-        Contact: <a href="mailto:danieljevans168@gmail.com">danieljevans168@gmail.com</a>
+      <div>
+        <a href="mailto:danieljevans168@gmail.com" className="underline hover:text-indigo-600 dark:hover:text-indigo-400 transition-colors">danieljevans168@gmail.com</a>
       </div>
-      <div className='my-4'>
-        Copyright © {year} Daniel Evans
+      <div className="text-xs text-gray-500 dark:text-gray-400 mt-1">
+        © {year} Daniel Evans
       </div>
-    </div>
+    </footer>
   )
 }
 
