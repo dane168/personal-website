@@ -1,9 +1,5 @@
 import Header from "@/components/Header";
-import { promises as fs } from 'fs';
-import WorkSection from "@/components/work";
-import { EducationData, WorkData } from "../../../data/types";
 import Footer from "@/components/Footer";
-import EducationSection from "@/components/education";
 
 
 export default function ResumePage() {

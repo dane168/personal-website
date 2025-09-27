@@ -17,7 +17,7 @@ export default async function Home() {
           {/* Hero Section - Concise Summary */}
           <div className="md:flex flex-row items-center text-left justify-between mb-8">
             <div className="flex-1 flex flex-col justify-center md:items-start items-center text-center md:text-left">
-              <h1 className="mb-2 text-3xl font-bold md:text-4xl">Hi! I'm Daniel Evans</h1>
+              <h1 className="mb-2 text-3xl font-bold md:text-4xl">Hi! I&apos;m Daniel Evans</h1>
               <p className="text-lg md:text-xl mb-2">Data Engineer | danieljevans168@gmail.com</p>
               <p className="text-base md:text-lg text-gray-700 dark:text-gray-300 mb-2">
                 Building robust data solutions and automation for enterprise-scale systems. Experienced in Python, SQL, cloud, and full-stack development. Passionate about turning complex requirements into practical, scalable tools.
