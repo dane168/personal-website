@@ -65,21 +65,22 @@ export default function Home() {
                   <img src="/1659083620630.jpeg" alt="Daniel Evans" className="w-full h-full object-cover" />
                 </div>
                 <div>
-                  <p className="text-muted-foreground">Hey, I'm</p>
                   <h1 className="text-2xl font-bold">Daniel Evans</h1>
+                  <p className="text-muted-foreground">Data Engineer</p>
                 </div>
               </div>
 
               <h2 className="text-4xl sm:text-5xl md:text-6xl lg:text-7xl font-bold leading-tight">
-                I build{' '}
-                <span className="text-gradient">data systems</span>
+                Data pipelines,{' '}
+                <br className="hidden sm:block" />
+                <span className="text-gradient">full-stack apps</span>,
                 <br />
-                that scale.
+                and everything in between.
               </h2>
 
               <p className="text-lg md:text-xl text-muted-foreground max-w-2xl">
-                Data Engineer crafting robust pipelines, real-time analytics, and full-stack applications.
-                Turning complex data challenges into elegant, scalable solutions.
+                Building data infrastructure and internal tools at scale.
+                Python, SQL, cloud, and a bit of frontend when needed.
               </p>
 
               <div className="flex flex-wrap items-center gap-4 pt-4">
@@ -154,9 +155,9 @@ export default function Home() {
             transition={{ duration: 0.5 }}
             className="mb-16"
           >
-            <h2 className="text-3xl md:text-4xl font-bold mb-4">Featured Projects</h2>
+            <h2 className="text-3xl md:text-4xl font-bold mb-4">Projects</h2>
             <p className="text-lg text-muted-foreground max-w-2xl">
-              A selection of projects I've built, from real-time data pipelines to IoT applications.
+              A mix of work and personal projects spanning data engineering, full-stack development, and whatever else catches my interest.
             </p>
           </motion.div>
 

@@ -22,13 +22,13 @@ export default function ProjectDetail() {
               DE<span className="text-primary">.</span>
             </Link>
             <div className="flex items-center gap-6">
-              <Link to="/#projects" className="text-sm font-medium hover:text-primary transition-colors hidden sm:block">
+              <Link to="/" className="text-sm font-medium hover:text-primary transition-colors hidden sm:block">
                 Projects
               </Link>
-              <Link to="/#about" className="text-sm font-medium hover:text-primary transition-colors hidden sm:block">
+              <Link to="/" className="text-sm font-medium hover:text-primary transition-colors hidden sm:block">
                 About
               </Link>
-              <Link to="/#contact" className="text-sm font-medium hover:text-primary transition-colors hidden sm:block">
+              <Link to="/" className="text-sm font-medium hover:text-primary transition-colors hidden sm:block">
                 Contact
               </Link>
               <ModeToggle />
@@ -40,19 +40,20 @@ export default function ProjectDetail() {
       {/* Hero */}
       <section className="pt-32 pb-16 section-padding">
         <div className="container-wide">
+          <div className="mb-8 relative z-10">
+            <Link
+              to="/"
+              className="inline-flex items-center gap-2 text-muted-foreground hover:text-foreground transition-colors cursor-pointer"
+            >
+              <FiArrowLeft size={18} />
+              Back to Home
+            </Link>
+          </div>
           <motion.div
             initial={{ opacity: 0, y: 20 }}
             animate={{ opacity: 1, y: 0 }}
             transition={{ duration: 0.5 }}
           >
-            <Link
-              to="/"
-              className="inline-flex items-center gap-2 text-muted-foreground hover:text-foreground transition-colors mb-8"
-            >
-              <FiArrowLeft size={18} />
-              Back to Home
-            </Link>
-
             <div className="grid lg:grid-cols-2 gap-12 items-center">
               <div className="space-y-6">
                 <div className="flex items-center gap-3">
@@ -201,7 +202,7 @@ export default function ProjectDetail() {
       <section className="py-16 section-padding bg-secondary/30">
         <div className="container-wide">
           <h2 className="text-2xl font-bold mb-8">Other Projects</h2>
-          <div className="grid sm:grid-cols-2 gap-6">
+          <div className="grid sm:grid-cols-2 lg:grid-cols-3 gap-6">
             {projects
               .filter(p => p.id !== project.id)
               .map((otherProject) => (

@@ -5,6 +5,7 @@ export interface Project {
   description: string
   longDescription?: string
   status: 'live' | 'in-development' | 'concept'
+  category: 'personal' | 'work'
   techStack: string[]
   features: string[]
   links?: {
@@ -30,6 +31,7 @@ Key architectural decisions include:
 - Containerized deployment on AWS ECS Fargate
 - Comprehensive observability with Prometheus and Grafana`,
     status: 'live',
+    category: 'personal',
     techStack: ['Python', 'Kafka', 'FastAPI', 'React', 'AWS', 'Terraform', 'PostgreSQL', 'Docker'],
     features: [
       'Real-time streaming data ingestion',
@@ -41,6 +43,63 @@ Key architectural decisions include:
     ],
     gradient: 'from-violet-500 to-purple-600',
     icon: '📊'
+  },
+  {
+    id: 'enterprise-data-platform',
+    title: 'Enterprise Data Platform',
+    tagline: 'Historical data pipelines and reporting infrastructure',
+    description: 'Large-scale data platform handling ingestion, transformation, and visualisation of enterprise metrics across multiple source systems.',
+    longDescription: `Designed and maintained a comprehensive data platform supporting business-critical reporting and analytics. The system consolidates data from various sources into a centralised SQL Server data warehouse.
+
+The platform handles batch processing on schedules ranging from 4-hourly to daily refreshes, ensuring stakeholders have access to timely, accurate metrics.
+
+Key responsibilities included:
+- Architecting data ingestion from databases and flat files
+- Building transformation logic using modern tooling
+- Creating and maintaining executive dashboards
+- Ensuring data quality and pipeline reliability`,
+    status: 'live',
+    category: 'work',
+    techStack: ['Python', 'Pandas', 'DuckDB', 'dbt', 'SQL Server', 'Tableau'],
+    features: [
+      'Multi-source data ingestion',
+      'Scheduled batch processing',
+      'SQL-based transformations with dbt',
+      'Executive reporting dashboards',
+      'Data quality monitoring',
+      'Historical trend analysis'
+    ],
+    gradient: 'from-blue-500 to-cyan-600',
+    icon: '🗄️'
+  },
+  {
+    id: 'internal-tooling-platform',
+    title: 'Internal Tooling Platform',
+    tagline: 'Full-stack application for team operations',
+    description: 'End-to-end internal web application built to streamline team workflows, featuring asynchronous task processing and custom integrations.',
+    longDescription: `Led the full lifecycle development of an internal tooling platform, from initial requirements gathering through to production deployment and ongoing maintenance.
+
+The application serves as a central hub for team operations, handling everything from automated notifications to scheduled task management.
+
+Key aspects of the project:
+- Full ownership from planning to deployment
+- Custom frontend built to team requirements
+- Asynchronous job processing via message queue
+- On-premise hosting with infrastructure design
+- Integration with existing enterprise systems`,
+    status: 'live',
+    category: 'work',
+    techStack: ['Django', 'Python', 'Kafka', 'JavaScript', 'HTML/CSS', 'PostgreSQL'],
+    features: [
+      'Custom web interface',
+      'Asynchronous task processing',
+      'Message queue integration',
+      'Automated notifications',
+      'On-premise deployment',
+      'Enterprise system integrations'
+    ],
+    gradient: 'from-orange-500 to-red-600',
+    icon: '⚙️'
   },
   {
     id: 'smart-home',
@@ -56,6 +115,7 @@ Design goals:
 - Voice control integration
 - Energy monitoring and optimization`,
     status: 'in-development',
+    category: 'personal',
     techStack: ['React Native', 'TypeScript', 'Node.js', 'MQTT', 'PostgreSQL', 'Redis'],
     features: [
       'Unified device dashboard',
