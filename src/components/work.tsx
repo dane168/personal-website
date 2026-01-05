@@ -1,4 +1,3 @@
-import React from 'react'
 import SkillTag from './skill_tag'
 import { WorkData } from '../../data/types'
 

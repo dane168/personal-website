@@ -1,4 +1,3 @@
-import React from 'react'
 import { EducationData } from '../../data/types'
 import SkillTag from './skill_tag'
 

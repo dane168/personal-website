@@ -1,20 +1,28 @@
-"use client"
-
-import * as React from "react"
-import { useTheme } from "next-themes"
-import { IoMoonOutline, IoSunnyOutline } from "react-icons/io5"
+import { useTheme } from '@/components/theme-provider'
+import { FiSun, FiMoon } from 'react-icons/fi'
 
 export function ModeToggle() {
   const { theme, setTheme } = useTheme()
 
+  const toggleTheme = () => {
+    if (theme === 'dark') {
+      setTheme('light')
+    } else if (theme === 'light') {
+      setTheme('dark')
+    } else {
+      const systemDark = window.matchMedia('(prefers-color-scheme: dark)').matches
+      setTheme(systemDark ? 'light' : 'dark')
+    }
+  }
+
   return (
-    <div className="h-4 hover:cursor-pointer" onClick={() => setTheme(theme === 'light' ? 'dark' : 'light')} title="Toggle light/dark mode" >
-      <div className="dark:hidden">
-        <IoSunnyOutline size={25} />
-      </div>
-      <div className="hidden dark:block">
-        <IoMoonOutline size={25} />
-      </div>
-    </div>
+    <button
+      onClick={toggleTheme}
+      className="p-2 rounded-lg hover:bg-secondary transition-colors"
+      title="Toggle theme"
+    >
+      <FiSun size={18} className="dark:hidden" />
+      <FiMoon size={18} className="hidden dark:block" />
+    </button>
   )
 }
