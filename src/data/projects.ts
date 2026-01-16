@@ -102,30 +102,39 @@ Key aspects of the project:
     icon: '⚙️'
   },
   {
-    id: 'smart-home',
-    title: 'Smart Home Controller',
-    tagline: 'Unified IoT device management platform',
-    description: 'A comprehensive smart home application bringing all IoT devices under one beautiful, intuitive interface. Currently in active design and development.',
-    longDescription: `The vision for this project is to create a truly unified smart home experience. Rather than juggling multiple apps for different device ecosystems, this controller provides a single, elegant interface.
+    id: 'switchopus',
+    title: 'SwitchOpus',
+    tagline: 'Smart home automation powered by energy prices',
+    description: 'A full-stack home automation platform that integrates with Octopus Energy Agile tariffs to automatically run smart devices during the cheapest electricity periods.',
+    longDescription: `SwitchOpus (a play on "switch" for home control and "octopus" for Octopus Energy) is a smart home automation platform designed to save money by intelligently scheduling device operation based on real-time electricity prices.
 
-Design goals:
-- Instant device control with haptic feedback
-- Beautiful visualizations of home state
-- Automation workflows with visual builder
-- Voice control integration
-- Energy monitoring and optimization`,
-    status: 'in-development',
+The UK's Octopus Agile tariff offers half-hourly variable pricing - SwitchOpus fetches these prices and lets you automate devices to run when electricity is cheapest.
+
+Key capabilities:
+- Real-time Agile price fetching with color-coded visualizations
+- Tuya smart device integration for plugs, switches, and more
+- Multiple schedule types: time slots, price thresholds, cheapest N hours
+- Conflict detection when schedules overlap
+- Execution logging to track automation history
+- Support for all 14 UK electricity distribution regions
+
+Built as a monorepo with a React frontend, Express backend, and SQLite database - all containerized with Docker and deployed via Terraform.`,
+    status: 'live',
     category: 'personal',
-    techStack: ['React Native', 'TypeScript', 'Node.js', 'MQTT', 'PostgreSQL', 'Redis'],
+    techStack: ['React', 'TypeScript', 'Node.js', 'Express', 'SQLite', 'Drizzle ORM', 'Docker', 'Terraform'],
     features: [
-      'Unified device dashboard',
-      'Room-based organization',
-      'Automation scene builder',
-      'Energy usage analytics',
-      'Voice assistant integration',
-      'Real-time device sync'
+      'Real-time Octopus Agile price display',
+      'Tuya smart device control',
+      'Automated price-based scheduling',
+      'Multiple schedule types',
+      'Google OAuth authentication',
+      'Mobile-responsive dashboard'
     ],
+    links: {
+      live: 'https://switchopus.com',
+      github: 'https://github.com/dane168/octopus_api_controller'
+    },
     gradient: 'from-emerald-500 to-teal-600',
-    icon: '🏠'
+    icon: '🐙'
   }
 ]
