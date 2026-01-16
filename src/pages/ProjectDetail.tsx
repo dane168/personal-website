@@ -75,13 +75,13 @@ export default function ProjectDetail() {
                 </p>
 
                 {project.links && (
-                  <div className="flex flex-wrap gap-3 pt-4">
+                  <div className="flex flex-wrap gap-3 pt-4 relative z-20">
                     {project.links.live && (
                       <a
                         href={project.links.live}
                         target="_blank"
                         rel="noopener noreferrer"
-                        className="px-5 py-2.5 rounded-xl bg-primary text-primary-foreground font-medium hover:opacity-90 transition-opacity inline-flex items-center gap-2"
+                        className="px-5 py-2.5 rounded-xl bg-primary text-primary-foreground font-medium hover:opacity-90 transition-opacity inline-flex items-center gap-2 relative z-20"
                       >
                         <FiExternalLink size={16} />
                         View Live
@@ -92,7 +92,7 @@ export default function ProjectDetail() {
                         href={project.links.github}
                         target="_blank"
                         rel="noopener noreferrer"
-                        className="px-5 py-2.5 rounded-xl bg-secondary text-secondary-foreground font-medium hover:bg-secondary/80 transition-colors inline-flex items-center gap-2"
+                        className="px-5 py-2.5 rounded-xl bg-secondary text-secondary-foreground font-medium hover:bg-secondary/80 transition-colors inline-flex items-center gap-2 relative z-20"
                       >
                         <FiGithub size={16} />
                         Source Code
@@ -108,8 +108,8 @@ export default function ProjectDetail() {
                 animate={{ opacity: 1, scale: 1 }}
                 transition={{ duration: 0.5, delay: 0.2 }}
               >
-                <div className={`aspect-[4/3] rounded-3xl bg-gradient-to-br ${project.gradient} p-8 overflow-hidden glow`}>
-                  <div className="absolute inset-0 opacity-30">
+                <div className={`aspect-[4/3] rounded-3xl bg-gradient-to-br ${project.gradient} p-8 overflow-hidden glow relative`}>
+                  <div className="absolute inset-0 opacity-30 pointer-events-none">
                     <div className="absolute top-1/4 left-1/4 w-32 h-32 rounded-full bg-white/20 blur-2xl" />
                     <div className="absolute bottom-1/4 right-1/4 w-40 h-40 rounded-full bg-black/10 blur-2xl" />
                   </div>
@@ -234,7 +234,7 @@ export default function ProjectDetail() {
       <footer className="py-8 section-padding border-t border-border">
         <div className="container-wide flex flex-col sm:flex-row items-center justify-between gap-4">
           <p className="text-sm text-muted-foreground">
-            © {new Date().getFullYear()} Daniel Evans. Built with React & Tailwind.
+            © {new Date().getFullYear()} Daniel Evans.
           </p>
           <div className="flex items-center gap-4">
             <a href="https://github.com/dane168" className="text-muted-foreground hover:text-foreground transition-colors">

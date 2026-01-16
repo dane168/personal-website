@@ -266,7 +266,7 @@ export default function Home() {
       <footer className="py-8 section-padding border-t border-border">
         <div className="container-wide flex flex-col sm:flex-row items-center justify-between gap-4">
           <p className="text-sm text-muted-foreground">
-            © {new Date().getFullYear()} Daniel Evans. Built with React & Tailwind.
+            © {new Date().getFullYear()} Daniel Evans.
           </p>
           <div className="flex items-center gap-4">
             <a href="https://github.com/dane168" className="text-muted-foreground hover:text-foreground transition-colors">

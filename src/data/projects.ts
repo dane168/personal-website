@@ -103,12 +103,12 @@ Key aspects of the project:
   },
   {
     id: 'switchopus',
-    title: 'SwitchOpus',
-    tagline: 'Smart home automation powered by energy prices',
-    description: 'A full-stack home automation platform that integrates with Octopus Energy Agile tariffs to automatically run smart devices during the cheapest electricity periods.',
-    longDescription: `SwitchOpus (a play on "switch" for home control and "octopus" for Octopus Energy) is a smart home automation platform designed to save money by intelligently scheduling device operation based on real-time electricity prices.
+    title: 'Switchopus',
+    tagline: 'Smart home automation powered by Agile energy prices',
+    description: 'A full-stack home automation platform that integrates with Octopus Energy\'s Agile tariffs to automatically run smart devices during the cheapest electricity periods.',
+    longDescription: `Switchopus (a play on "switch" for home control and "octopus" for Octopus Energy) is a smart home automation platform designed to save money by intelligently scheduling device operation based on real-time electricity prices.
 
-The UK's Octopus Agile tariff offers half-hourly variable pricing - SwitchOpus fetches these prices and lets you automate devices to run when electricity is cheapest.
+The Octopus Energy Agile tariff offers half-hourly variable pricing - Switchopus fetches these prices and lets you automate devices to run when electricity is cheapest.
 
 Key capabilities:
 - Real-time Agile price fetching with color-coded visualizations
@@ -118,10 +118,10 @@ Key capabilities:
 - Execution logging to track automation history
 - Support for all 14 UK electricity distribution regions
 
-Built as a monorepo with a React frontend, Express backend, and SQLite database - all containerized with Docker and deployed via Terraform.`,
+Built as a monorepo with a React frontend, Express backend, and SQLite database - all containerized with Docker and deployed to a AWS t4g.nano instance via Terraform.`,
     status: 'live',
     category: 'personal',
-    techStack: ['React', 'TypeScript', 'Node.js', 'Express', 'SQLite', 'Drizzle ORM', 'Docker', 'Terraform'],
+    techStack: ['React', 'TypeScript', 'Node.js', 'Express', 'SQLite', 'Docker', 'Terraform'],
     features: [
       'Real-time Octopus Agile price display',
       'Tuya smart device control',
