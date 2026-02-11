@@ -91,7 +91,7 @@ export default function Home() {
                   View My Work
                 </a>
                 <a
-                  href="/CV_2025.pdf"
+                  href="/CV_Daniel_Evans_2026.pdf"
                   download
                   className="px-6 py-3 rounded-xl bg-secondary text-secondary-foreground font-medium hover:bg-secondary/80 transition-colors"
                 >
