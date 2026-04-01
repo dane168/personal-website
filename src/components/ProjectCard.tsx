@@ -23,29 +23,50 @@ export default function ProjectCard({ project, index }: ProjectCardProps) {
         <div className={`relative flex flex-col ${isEven ? 'lg:flex-row' : 'lg:flex-row-reverse'} gap-8 lg:gap-12 items-center`}>
           {/* Visual Side */}
           <div className="w-full lg:w-1/2">
-            <div className={`relative aspect-[4/3] rounded-3xl bg-gradient-to-br ${project.gradient} p-8 overflow-hidden group-hover:scale-[1.02] transition-transform duration-500`}>
-              {/* Abstract pattern */}
-              <div className="absolute inset-0 opacity-30">
-                <div className="absolute top-1/4 left-1/4 w-32 h-32 rounded-full bg-white/20 blur-2xl" />
-                <div className="absolute bottom-1/4 right-1/4 w-40 h-40 rounded-full bg-black/10 blur-2xl" />
+            {project.designWalkthrough && project.designWalkthrough.length > 0 ? (
+              <div className="relative rounded-3xl overflow-hidden border border-border group-hover:scale-[1.02] transition-transform duration-500">
+                <img
+                  src={project.designWalkthrough[0].image}
+                  alt={project.title}
+                  className="w-full h-auto"
+                  loading="lazy"
+                />
+                {/* Status badge */}
+                <div className="absolute top-6 right-6">
+                  <span className={`px-3 py-1 rounded-full text-xs font-medium backdrop-blur-sm ${
+                    project.status === 'live'
+                      ? 'bg-green-500/20 text-white border border-green-400/30'
+                      : 'bg-amber-500/20 text-white border border-amber-400/30'
+                  }`}>
+                    {project.status === 'live' ? 'Live' : 'In Development'}
+                  </span>
+                </div>
               </div>
+            ) : (
+              <div className={`relative aspect-[4/3] rounded-3xl bg-gradient-to-br ${project.gradient} p-8 overflow-hidden group-hover:scale-[1.02] transition-transform duration-500`}>
+                {/* Abstract pattern */}
+                <div className="absolute inset-0 opacity-30">
+                  <div className="absolute top-1/4 left-1/4 w-32 h-32 rounded-full bg-white/20 blur-2xl" />
+                  <div className="absolute bottom-1/4 right-1/4 w-40 h-40 rounded-full bg-black/10 blur-2xl" />
+                </div>
 
-              {/* Icon */}
-              <div className="relative h-full flex items-center justify-center">
-                <span className="text-8xl md:text-9xl filter drop-shadow-lg">{project.icon}</span>
-              </div>
+                {/* Icon */}
+                <div className="relative h-full flex items-center justify-center">
+                  <span className="text-8xl md:text-9xl filter drop-shadow-lg">{project.icon}</span>
+                </div>
 
-              {/* Status badge */}
-              <div className="absolute top-6 right-6">
-                <span className={`px-3 py-1 rounded-full text-xs font-medium backdrop-blur-sm ${
-                  project.status === 'live'
-                    ? 'bg-green-500/20 text-white border border-green-400/30'
-                    : 'bg-amber-500/20 text-white border border-amber-400/30'
-                }`}>
-                  {project.status === 'live' ? 'Live' : 'In Development'}
-                </span>
+                {/* Status badge */}
+                <div className="absolute top-6 right-6">
+                  <span className={`px-3 py-1 rounded-full text-xs font-medium backdrop-blur-sm ${
+                    project.status === 'live'
+                      ? 'bg-green-500/20 text-white border border-green-400/30'
+                      : 'bg-amber-500/20 text-white border border-amber-400/30'
+                  }`}>
+                    {project.status === 'live' ? 'Live' : 'In Development'}
+                  </span>
+                </div>
               </div>
-            </div>
+            )}
           </div>
 
           {/* Content Side */}

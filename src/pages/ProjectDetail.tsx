@@ -108,15 +108,25 @@ export default function ProjectDetail() {
                 animate={{ opacity: 1, scale: 1 }}
                 transition={{ duration: 0.5, delay: 0.2 }}
               >
-                <div className={`aspect-[4/3] rounded-3xl bg-gradient-to-br ${project.gradient} p-8 overflow-hidden glow relative`}>
-                  <div className="absolute inset-0 opacity-30 pointer-events-none">
-                    <div className="absolute top-1/4 left-1/4 w-32 h-32 rounded-full bg-white/20 blur-2xl" />
-                    <div className="absolute bottom-1/4 right-1/4 w-40 h-40 rounded-full bg-black/10 blur-2xl" />
+                {project.designWalkthrough && project.designWalkthrough.length > 0 ? (
+                  <div className="rounded-3xl overflow-hidden border border-border shadow-lg">
+                    <img
+                      src={project.designWalkthrough[0].image}
+                      alt={project.title}
+                      className="w-full h-auto"
+                    />
                   </div>
-                  <div className="relative h-full flex items-center justify-center">
-                    <span className="text-8xl md:text-9xl filter drop-shadow-lg">{project.icon}</span>
+                ) : (
+                  <div className={`aspect-[4/3] rounded-3xl bg-gradient-to-br ${project.gradient} p-8 overflow-hidden glow relative`}>
+                    <div className="absolute inset-0 opacity-30 pointer-events-none">
+                      <div className="absolute top-1/4 left-1/4 w-32 h-32 rounded-full bg-white/20 blur-2xl" />
+                      <div className="absolute bottom-1/4 right-1/4 w-40 h-40 rounded-full bg-black/10 blur-2xl" />
+                    </div>
+                    <div className="relative h-full flex items-center justify-center">
+                      <span className="text-8xl md:text-9xl filter drop-shadow-lg">{project.icon}</span>
+                    </div>
                   </div>
-                </div>
+                )}
               </motion.div>
             </div>
           </motion.div>
@@ -197,6 +207,63 @@ export default function ProjectDetail() {
           </div>
         </div>
       </section>
+
+      {/* Design Walkthrough */}
+      {project.designWalkthrough && project.designWalkthrough.length > 0 && (
+        <section className="py-16 section-padding">
+          <div className="container-wide">
+            <motion.div
+              initial={{ opacity: 0, y: 20 }}
+              whileInView={{ opacity: 1, y: 0 }}
+              viewport={{ once: true }}
+              transition={{ duration: 0.5 }}
+            >
+              <h2 className="text-3xl font-bold mb-12">Design Walkthrough</h2>
+            </motion.div>
+
+            <div className="space-y-24">
+              {project.designWalkthrough.map((section, i) => {
+                const isEven = i % 2 === 0
+                return (
+                  <motion.div
+                    key={i}
+                    initial={{ opacity: 0, y: 30 }}
+                    whileInView={{ opacity: 1, y: 0 }}
+                    viewport={{ once: true, margin: '-50px' }}
+                    transition={{ duration: 0.6 }}
+                    className={`flex flex-col ${isEven ? 'lg:flex-row' : 'lg:flex-row-reverse'} gap-8 lg:gap-16 items-center`}
+                  >
+                    {/* Screenshot */}
+                    <div className="w-full lg:w-3/5">
+                      <div className="rounded-2xl overflow-hidden border border-border shadow-lg bg-card">
+                        <img
+                          src={section.image}
+                          alt={section.title}
+                          className="w-full h-auto"
+                          loading="lazy"
+                        />
+                      </div>
+                    </div>
+
+                    {/* Description */}
+                    <div className="w-full lg:w-2/5 space-y-4">
+                      <div className="flex items-center gap-3">
+                        <span className="flex items-center justify-center w-8 h-8 rounded-full bg-primary text-primary-foreground text-sm font-bold">
+                          {i + 1}
+                        </span>
+                        <h3 className="text-xl font-bold">{section.title}</h3>
+                      </div>
+                      <p className="text-muted-foreground leading-relaxed">
+                        {section.description}
+                      </p>
+                    </div>
+                  </motion.div>
+                )
+              })}
+            </div>
+          </div>
+        </section>
+      )}
 
       {/* Other Projects */}
       <section className="py-16 section-padding bg-secondary/30">
